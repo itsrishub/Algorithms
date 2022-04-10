@@ -3,8 +3,8 @@
 
 int RainbowSearch(int a[], int x)
 {
-	int size = sizeof(a)/sizeof(a[0]);
     int k = 0;
+	int size = sizeof(a)/sizeof(a[0]);
 	
 	
     if(size%2 != 0 && a[size/2] == x)
