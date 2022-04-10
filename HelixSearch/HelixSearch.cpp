@@ -6,7 +6,6 @@ int HelixSearch(int a[], int size, int x)
 {
     int c=0, k=0;
 	
-
     for(int i=0;i<size;i++)
     {
         if(a[i+c] == tar)
