@@ -1,6 +1,5 @@
-#include<iostream>
+#include<stdio.h>
 
-using namespace std;
 
 int RainbowSearch(int a[], int x)
 {
@@ -9,7 +8,7 @@ int RainbowSearch(int a[], int x)
 	
     if(size%2 != 0 && a[size/2] == x)
     {
-        cout<<"found at: "<<size/2;
+        printf("found at: %d", size/2);
         k=0;
     }
     else
@@ -18,13 +17,13 @@ int RainbowSearch(int a[], int x)
         {
             if(a[i] == x)
             {
-                cout<<"found at: "<<i;
+                printf("found at: %d", i);
                 k=0;
                 break;
             }
             else if(a[size-1-i] == x)
             {
-                cout<<"found at: "<<size-1-i;
+                printf("found at: %d", size-1-i);
                 k=0;
                 break;
             }
@@ -33,7 +32,7 @@ int RainbowSearch(int a[], int x)
         }
     }
     if(k == 1)
-    cout<<"not found";
+    printf("not found");
     return 0;
 }
 
@@ -41,6 +40,8 @@ int main()
 {
     int a[9] = {1,2,3,4,5,6,7,8,9};
     int x = 4;
+	
     RainbowSearch(a, x);
+	
     return 0;
 }
