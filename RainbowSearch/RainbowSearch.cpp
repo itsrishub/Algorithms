@@ -3,7 +3,7 @@
 using namespace std;
 
 
-int RainbowSearch(int a[], int x, int size)
+int RainbowSearch(int a[], int size, int x,)
 {
     int k = 0;
 	
@@ -43,7 +43,7 @@ int main()
     int x = 4;
     int size = sizeof(a)/sizeof(a[0]);
 	
-    RainbowSearch(a, x, size);
+    RainbowSearch(a, size, x);
 	
     return 0;
 }
