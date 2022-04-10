@@ -1,12 +1,14 @@
 #include<iostream>
+
 using namespace std;
 
-int HelixSearch(int a[], int tar)
+int HelixSearch(int a[], int x)
 {
-    int c=0; //taking c for jumping in helix
-    int k=0; //for not found reference
+    int c=0;
+    int k=0;
+	int size = sizeof(a)/sizeof(a[0]);
 
-    for(int i=0;i<9;i++)
+    for(int i=0;i<size;i++)
     {
         if(a[i+c] == tar)
         {
@@ -34,10 +36,10 @@ int HelixSearch(int a[], int tar)
 
 int main()
 {
-    int a[9] = {2,6,4,7,8,3,9,1,5}; //array of 9 elements
-    int tar = 4; //target value to be searched
+    int a[9] = {2,6,4,7,8,3,9,1,5};
+    int x = 4;
 
-    HelixSearch(a, tar);
+    HelixSearch(a, x);
     
     return 0;
 }
