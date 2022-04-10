@@ -2,11 +2,11 @@
 
 using namespace std;
 
-#define size 9
-
 int RainbowSearch(int a[], int x)
 {
     int k = 0;
+	size = sizeof(a)/sizeof(a[0]);
+	
     if(size%2 != 0 && a[size/2] == x)
     {
         cout<<"found at: "<<size/2;
@@ -40,7 +40,7 @@ int RainbowSearch(int a[], int x)
 int main()
 {
     int a[size] = {1,2,3,4,5,6,7,8,9};
-    int x=4;
+    int x = 4;
     RainbowSearch(a, x);
     return 0;
 }
