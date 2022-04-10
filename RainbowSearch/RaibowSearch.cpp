@@ -39,7 +39,7 @@ int RainbowSearch(int a[], int x)
 
 int main()
 {
-    int a[size] = {1,2,3,4,5,6,7,8,9};
+    int a[9] = {1,2,3,4,5,6,7,8,9};
     int x = 4;
     RainbowSearch(a, x);
     return 0;
