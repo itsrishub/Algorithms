@@ -4,11 +4,11 @@
 int RainbowSearch(int a[], int x)
 {
     int k = 0;
-	int size = sizeof(a)/sizeof(a[0]);
+	
 	
     if(size%2 != 0 && a[size/2] == x)
     {
-        printf("found at: %d", size/2);
+        cout<<"found at: %d"<<size/2;
         k=0;
     }
     else
@@ -17,13 +17,13 @@ int RainbowSearch(int a[], int x)
         {
             if(a[i] == x)
             {
-                printf("found at: %d", i);
+                cout<<"found at: %d"<<i;
                 k=0;
                 break;
             }
             else if(a[size-1-i] == x)
             {
-                printf("found at: %d", size-1-i);
+                cout<<"found at: %d"<<size-1-i;
                 k=0;
                 break;
             }
@@ -32,7 +32,7 @@ int RainbowSearch(int a[], int x)
         }
     }
     if(k == 1)
-    printf("not found");
+    cout<<"not found";
     return 0;
 }
 
