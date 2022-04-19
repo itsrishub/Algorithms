@@ -5,12 +5,12 @@ using namespace std;
 
 int RainbowSearch(int a[], int size, int x,)
 {
-    int k = 0;
+    bool flag = 0;
 	
     if(size%2 != 0 && a[size/2] == x)
     {
         cout<<"found at: "<<size/2;
-        k=0;
+        flag = 0;
     }
     else
     {
@@ -19,20 +19,20 @@ int RainbowSearch(int a[], int size, int x,)
             if(a[i] == x)
             {
                 cout<<"found at: "<<i;
-                k=0;
+                flag = 0;
                 break;
             }
             else if(a[size-1-i] == x)
             {
                 cout<<"found at: "<<size-1-i;
-                k=0;
+                flag = 0;
                 break;
             }
             else
-                k = 1;
+                flag = 1;
         }
     }
-    if(k == 1)
+    if(flag == 1)
     cout<<"not found";
     return 0;
 }
