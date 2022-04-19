@@ -4,29 +4,30 @@ using namespace std;
 
 int HelixSearch(int a[], int size, int x)
 {
-    int c=0, k=0;
+    int c = 0;
+	bool flag = 0;
 	
     for(int i=0;i<size;i++)
     {
         if(a[i+c] == tar)
         {
             cout<<"Found! at "<<i+c<<"\n";
-            k = 0;
+            flag = 0;
             break;
         }
         c++;
         if(a[i+c] == tar)
         {
             cout<<"Found! at "<<i+c<<"\n";
-            k = 0;
+            flag = 0;
             break;
         }
         else
         {
-            k = 1;
+            flag = 1;
         }
     }
-    if(k == 1)
+    if(flag == 1)
     cout<<"Not Found!\n";
     return 0;
 
